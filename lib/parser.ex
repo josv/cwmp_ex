@@ -34,7 +34,7 @@ defmodule CWMP.Protocol.Parser do
   end
 
   def initial_elem_state(handler) do
-    %ElemState{handler: handler, acc: handler.initial_acc}
+    %ElemState{handler: handler, acc: handler.initial_acc()}
   end
 
   defp initial_state do

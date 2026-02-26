@@ -37,7 +37,7 @@ defmodule CWMP.Protocol.ParserHelpers do
 
   # Pushes a new state onto the handler stack.
   def push_handler(state, handler) do
-    newelem = %ElemState{handler: handler, acc: handler.initial_acc}
+    newelem = %ElemState{handler: handler, acc: handler.initial_acc()}
     %State{curstate: newelem, stack: [state.curstate | state.stack]}
   end
 
