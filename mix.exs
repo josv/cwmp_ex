@@ -29,7 +29,7 @@ defmodule CWMP.Protocol.Mixfile do
   def deps do
     [
       {:mix_test_watch, "~> 1.1.0", only: :dev},
-      {:poison, "~> 5.0.0"},
+      {:poison, "~> 6.0"},
       {:xml_builder, "~> 2.3"},
       {:erlsom, "~> 1.5.0"},
       {:ex_doc, "~> 0.28.3", only: :dev}
